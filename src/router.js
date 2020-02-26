@@ -51,7 +51,7 @@ export const asyncRouterMap =[
     name: 'alumnos',
     meta: { layout: 'default' , roles: ["admin"], title:'Panel de Alumnos'},
     component: () => import(/* webpackChunkName: "adminasistencia" */ '@/views/Alumnos'),
-  },
+  },  
   {
     path: '/codigos',
     name: 'codigos',
@@ -63,6 +63,12 @@ export const asyncRouterMap =[
     name: 'routes',
     meta: { layout: 'default' , roles: ["admin"], title:'Panel de Rutas'},
     component: () => import(/* webpackChunkName: "adminasistencia" */ '@/views/RouteRestriccion'),
+  },
+  {
+    path: '/demodanny',
+    name: 'demodanny',
+    meta: { layout: 'default', title:'Registro de Notas'},
+    component: () => import(/* webpackChunkName: "demoDanny" */ '@/views/demoDanny'),
   },
 ]
 const router = new Router({

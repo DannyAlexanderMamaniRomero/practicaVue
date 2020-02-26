@@ -4,7 +4,7 @@
             <v-select
           :items="itemsRouter"
           v-model="select"
-          item-text="meta.title"
+          item-text="meta.title"  
           item-value="name"
           label="Seleccione la ruta"
           outline

@@ -79,7 +79,7 @@ export default {
         search:'',
         dialog: false,
         headers: [
-            {
+            {   
                 text: 'Usuario',
                 align: 'left',
                 value: 'usuario'

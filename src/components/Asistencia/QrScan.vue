@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div>   
     <v-layout justify-center row wrap>
         <v-flex xs6>
         <v-select
           :items="items"
-          v-model="select"
+          v-model="select"  
           item-text="text"
           item-value="value"
           label="Seleccione el tipo de Asistencia"

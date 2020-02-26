@@ -1,18 +1,16 @@
+
 <template>
-    <v-container grid-list-md text-xs-center>
-        <Reloj />
-        <QrScan />
- </v-container>
-    
+    <v-container grid-list-md text-xs-center> 
+       <Card />      
+    </v-container>  
 </template> 
 
 <script>
-import Reloj from '@/components/Asistencia/Reloj.vue';
-import QrScan from '@/components/Asistencia/QrScan.vue';
+import Card from '@/components/demoDanny/Card.vue';
 
 export default {
   components: {
-    Reloj,QrScan,
+    Card,
   },
   mounted () {
         

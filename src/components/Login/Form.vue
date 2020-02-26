@@ -56,10 +56,11 @@ export default {
                 return firebase.auth().signInWithEmailAndPassword(this.email,this.password).then((user)=>{
                             alert("Bienvenido denuevo ")
                             this.$store.dispatch('user/openDBChannel').then(()=>{
-                              this.$store.dispatch('setUserIsLogin', { flag: true })
-                              this.$router.push('/home')
+                            this.$store.dispatch('setUserIsLogin', { flag: true })
+                            this.$store.dispatch('demodanny/openDBChannel')
+                            //this.$store.dispatch('alumno/openDBChannel')
+                            this.$router.push('/home')
                             }).catch(console.error)
-                            
                         },(err)=>{
                             alert("Ha ocurrido un error: "+ err.message)
                         })

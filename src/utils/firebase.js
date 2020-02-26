@@ -30,6 +30,7 @@ const config = {
 };
 
 firebase.initializeApp(config)
+
 firebase.auth().onAuthStateChanged(user => {
   getFirestore().then(db => {
     if (user) {
